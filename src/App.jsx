@@ -1,12 +1,10 @@
 import {
-  Loader,
   NavBar,
   Sidebar,
   Hero,
   About,
   TechStack,
   Projects,
-  
   Footer,
   Contact,
 } from "./sections";
@@ -14,15 +12,15 @@ import {
 const App = () => {
   return (
     <div className="bg-black-100">
-      <Loader />
       <NavBar />
       <Sidebar />
+
       <Hero />
       <About />
       <TechStack />
       <Projects />
-      
       <Contact />
+
       <Footer />
     </div>
   );

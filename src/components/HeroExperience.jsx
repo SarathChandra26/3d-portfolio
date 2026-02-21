@@ -5,11 +5,12 @@ import Loader from "./Loader";
 
 const HeroExperience = () => {
   return (
-    <Canvas camera={{ position: [0, 0, 6], fov: 35 }}>
-      <Suspense fallback={<Loader />}>
-        <ambientLight intensity={1.5} />
-        <directionalLight position={[-5, 5, 5]} intensity={4} />
-        <HeroBoy scale={2.5} position={[0, -3, 0]} />
+    <Canvas camera={{ position: [0, 2, 4], fov: 35 }}>
+      <Suspense fallback={null}>
+        <ambientLight intensity={2} />
+        <directionalLight position={[5, 5, 5]} />
+
+        <HeroBoy scale={2.7} position={[0, -3.8, 0]} />
       </Suspense>
     </Canvas>
   );
